@@ -19,7 +19,15 @@ margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: bas
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+html, body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
 body {
     padding: 50px;
@@ -31,22 +39,35 @@ body {
 }
 #container {
     background: #fff;
-    width: 807px;
-    margin: 2rem auto;
-    padding: 40px 10px 40px 60px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-a { text-decoration: none; color: #049B4E; }
+a, #url { text-decoration: none; color: #049B4E; }
 
 
 h1 { font-size: 48px; line-height: 60px; font-weight: 800; color: #049B4E; }
-h2, .domain { font-size: 24px; line-height: 36px; font-weight: 700; }
+h2, #url { font-size: 24px; line-height: 36px; font-weight: 700; }
 h3 { font-weight: 700; font-style: italic; line-height: 36px; }
 
-ul { height: 30px; }
-li { float: left; margin-right: 50px; font-weight: 300; }
+li { float: left; width: 240px; font-weight: 300; }
+#list { height: 400px; overflow: scroll; }
 
-.spacer { height: 50px; clear: both; }
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.5);
+    background: #999;
+}
+
+.spacer { height: 30px; clear: both; }
