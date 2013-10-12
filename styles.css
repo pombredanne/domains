@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-    padding: 50px;
+    padding: 40px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 18px;
@@ -39,9 +39,9 @@ body {
 }
 #container {
     background: #fff;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px 10px 30px 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
     border: 1px solid rgba(0,0,0,0.1);
@@ -55,7 +55,7 @@ h2, #url { font-size: 24px; line-height: 36px; font-weight: 700; }
 h3 { font-weight: 700; font-style: italic; line-height: 36px; }
 
 li { float: left; width: 240px; font-weight: 300; }
-#list { height: 400px; overflow: scroll; }
+#list { height: 400px; overflow-y: scroll; }
 
 ::-webkit-scrollbar {
     width: 12px;
